@@ -1,0 +1,25 @@
+
+<svg id="miclock" viewBox="-1 -1 2 2" style="transform: rotate(-90deg)">
+  <g class="mihourface">
+    <circle r="1" />
+  </g>
+  <g class="mihourmeter">
+    <circle r=".5" />
+  </g>
+  <g class="miminuteface">
+    <circle r=".4" />
+  </g>
+</svg>
+
+<div id="debug">
+</div>
+
+<div id="standardtime">
+</div>
+
+<div id="mitime">
+</div>
+
+
+<div id="debug">
+</div>
