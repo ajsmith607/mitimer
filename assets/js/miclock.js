@@ -175,8 +175,8 @@
      drawArc(miclocksvgid + ' .miminuteface', miminutepctelapsed, 'elapsed');
 
        // SET METERS
-     setMeter(miclocksvgid + ' .mihourmeter', micount, 1 / micount, 0.04, '.mitick');
-     setMeter(miclocksvgid + ' .mihourmeter', midaylength, 1 / midaylength, 0.03, '.mihourtick');
+     setMeter(miclocksvgid + ' .mihourmeter', micount, 1 / micount, 0.04, 'mitick');
+     setMeter(miclocksvgid + ' .mihourmeter', midaylength, 1 / midaylength, 0.03, 'mihourtick');
 
    } else {
      // zero time
