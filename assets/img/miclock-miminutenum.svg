@@ -1,0 +1,15 @@
+<svg id="miclock" width="200" height="200" version="1.1" viewBox="-1 -1 2 2" xmlns="http://www.w3.org/2000/svg">
+ <g class="mihourface" transform="translate(31.344 -160.49)">
+  <circle r="1"/>
+ </g>
+ <g class="mihourmeter" transform="translate(31.344 -160.49)">
+  <circle r=".5"/>
+ </g>
+ <g class="miminuteface" transform="translate(31.344 -160.49)">
+  <circle r=".4"/>
+ </g>
+ <text x="89.048553" y="94.664139" style="fill:#000000;font-family:sans-serif;font-size:10.667px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="89.048553" y="94.664139" style="font-size:10.667px">1</tspan></text>
+ <text x="89.28553" y="110.97705" style="fill:#000000;font-family:sans-serif;font-size:10.667px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="89.28553" y="110.97705" style="font-size:10.667px">2</tspan></text>
+ <text x="102.29993" y="110.90153" style="fill:#000000;font-family:sans-serif;font-size:10.667px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="102.29993" y="110.90153" style="font-size:10.667px">3</tspan></text>
+ <text x="102.31816" y="94.664139" style="fill:#000000;font-family:sans-serif;font-size:10.667px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="102.31816" y="94.664139" style="font-size:10.667px">4</tspan></text>
+</svg>

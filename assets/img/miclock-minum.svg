@@ -1,0 +1,15 @@
+<svg id="miclock" width="200" height="200" version="1.1" viewBox="-1 -1 200 200" xmlns="http://www.w3.org/2000/svg">
+ <text x="8.9915047" y="26.31741" style="fill:#000000;font-family:sans-serif;font-size:21.333px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="8.9915047" y="26.31741" style="font-size:21.333px">1</tspan></text>
+ <text x="9.4654627" y="187.23138" style="fill:#000000;font-family:sans-serif;font-size:21.333px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="9.4654627" y="187.23138" style="font-size:21.333px">2</tspan></text>
+ <text x="174.62846" y="187.08034" style="fill:#000000;font-family:sans-serif;font-size:21.333px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="174.62846" y="187.08034" style="font-size:21.333px">3</tspan></text>
+ <text x="174.66492" y="26.31741" style="fill:#000000;font-family:sans-serif;font-size:21.333px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="174.66492" y="26.31741" style="font-size:21.333px">4</tspan></text>
+ <g class="mihourface" transform="translate(31.344 -160.49)">
+  <circle r="1"/>
+ </g>
+ <g class="mihourmeter" transform="translate(31.344 -160.49)">
+  <circle r=".5"/>
+ </g>
+ <g class="miminuteface" transform="translate(31.344 -160.49)">
+  <circle r=".4"/>
+ </g>
+</svg>

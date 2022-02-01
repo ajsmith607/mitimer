@@ -1,0 +1,27 @@
+<svg id="miclock" width="200" height="200" version="1.1" viewBox="-1 -1 200 200" xmlns="http://www.w3.org/2000/svg">
+ <g class="mihourface" transform="translate(31.344 -160.49)">
+  <circle r="1"/>
+ </g>
+ <g class="mihourmeter" transform="translate(31.344 -160.49)">
+  <circle r=".5"/>
+ </g>
+ <g class="miminuteface" transform="translate(31.344 -160.49)">
+  <circle r=".4"/>
+ </g>
+ <text x="82.832382" y="46.951084" style="fill:#000000;font-family:sans-serif;font-size:16px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="82.832382" y="46.951084" style="font-size:16px">1</tspan></text>
+ <text x="62.474651" y="54.251823" style="fill:#000000;font-family:sans-serif;font-size:16px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="62.474651" y="54.251823" style="font-size:16px">2</tspan></text>
+ <text x="45.803619" y="71.498001" style="fill:#000000;font-family:sans-serif;font-size:16px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="45.803619" y="71.498001" style="font-size:16px">3</tspan></text>
+ <text x="36.952801" y="93.100327" style="fill:#000000;font-family:sans-serif;font-size:16px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="36.952801" y="93.100327" style="font-size:16px">4</tspan></text>
+ <text x="36.753582" y="116.10856" style="fill:#000000;font-family:sans-serif;font-size:16px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="36.753582" y="116.10856" style="font-size:16px">1</tspan></text>
+ <text x="45.987213" y="138.57693" style="fill:#000000;font-family:sans-serif;font-size:16px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="45.987213" y="138.57693" style="font-size:16px">2</tspan></text>
+ <text x="62.291058" y="155.48569" style="fill:#000000;font-family:sans-serif;font-size:16px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="62.291058" y="155.48569" style="font-size:16px">3</tspan></text>
+ <text x="83.031601" y="163.0804" style="fill:#000000;font-family:sans-serif;font-size:16px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="83.031601" y="163.0804" style="font-size:16px">4</tspan></text>
+ <text x="105.16982" y="163.0804" style="fill:#000000;font-family:sans-serif;font-size:16px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="105.16982" y="163.0804" style="font-size:16px">1</tspan></text>
+ <text x="126.12817" y="155.59897" style="fill:#000000;font-family:sans-serif;font-size:16px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="126.12817" y="155.59897" style="font-size:16px">2</tspan></text>
+ <text x="143.33298" y="138.46365" style="fill:#000000;font-family:sans-serif;font-size:16px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="143.33298" y="138.46365" style="font-size:16px">3</tspan></text>
+ <text x="149.85242" y="116.10856" style="fill:#000000;font-family:sans-serif;font-size:16px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="149.85242" y="116.10856" style="font-size:16px">4</tspan></text>
+ <text x="149.6532" y="93.100327" style="fill:#000000;font-family:sans-serif;font-size:16px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="149.6532" y="93.100327" style="font-size:16px">1</tspan></text>
+ <text x="143.51657" y="71.611282" style="fill:#000000;font-family:sans-serif;font-size:16px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="143.51657" y="71.611282" style="font-size:16px">2</tspan></text>
+ <text x="125.94457" y="54.138542" style="fill:#000000;font-family:sans-serif;font-size:16px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="125.94457" y="54.138542" style="font-size:16px">3</tspan></text>
+ <text x="105.36903" y="46.951084" style="fill:#000000;font-family:sans-serif;font-size:16px;letter-spacing:0px;line-height:1.25;word-spacing:0px" xml:space="preserve"><tspan x="105.36903" y="46.951084" style="font-size:16px">4</tspan></text>
+</svg>

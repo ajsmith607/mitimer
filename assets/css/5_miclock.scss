@@ -4,20 +4,16 @@ colors
 blue: #058aff
 orange: #ff6a1f
 yellow: #ffad2b
-gray: # #295780 (or #034580)
+dark gray: #295780 (or #034580)
+light gray: #f3f4f5
 */
 
 svg#miclock {
-  width: 400px;
   display: block;
-  max-width: 90%;
+  width: 300px;
   height: auto;
-  margin: 1em auto;
+  margin: 1rem auto;
   fill: white;
-}
-
-svg#miclock .zerotime {
-    fill: #295780
 }
 
 svg#miclock line {
@@ -31,17 +27,22 @@ svg#miclock line.mitick {
 }
 
 svg#miclock circle {
+    fill: #058aff;
+}
+
+svg#miclock circle.up {
     fill: #ffad2b;
 }
 
-svg#miclock .mihourmeter circle {
+svg#miclock .mihourmeter circle.up {
     fill: white;
 }
- 
-svg#miclock .zeroface circle {
-    fill: #295780;
+
+svg#miclock circle.down {
+    fill: #058aff;
 }
 
+ 
 svg#miclock path  {
     fill: #058aff;
 }
