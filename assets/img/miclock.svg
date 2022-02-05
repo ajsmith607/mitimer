@@ -1,4 +1,4 @@
-<svg id="miclock" viewBox="-1 -1 2 2" style="transform: rotate(-90deg)">
+<svg id="miclock" viewbox="-1 -1 2 2" style="transform: rotate(-90deg)">
   <g class="mihourface">
     <circle r="1" />
   </g>
