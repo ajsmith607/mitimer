@@ -54,7 +54,7 @@ function getMitime(hours, minutes, micount, misize, miminutecount, mistart) {
             mihour = misize;
         }
 
-        var futureminutes = 60 - minutes; 
+        var futureminutes = 60 - minutes;
         var minutechunk = 60 / miminutecount;
         miminute = Math.ceil(futureminutes / minutechunk);
     }
@@ -143,6 +143,7 @@ function toggleZeroStyles(mi) {
 }
 
 function displayMiclock(miclocksvgid, mi, micount, misize, miminutecount, mistart, hours, minutes) {
+    minutes = minutes + 1; // account for the fact that miminutes are not zero based as in standard time
     var container = document.querySelector(miclocksvgid);
     var zeroclass = 'up';
     if (mi == 0 ) {
@@ -207,18 +208,17 @@ function getDisplayMitime(mitimeid, timeid, micount, misize, miminutecount, mist
 
 function miclock(miclocksvgid, mitimeid, timeid, micount, misize, miminutecount, mistart) {
     [hours, minutes, seconds, timeOfDay] = getStandardTime();
-    //[hours, minutes, seconds] = [6, 0, 0];
+    // [hours, minutes, seconds] = [13, 30, 0];
     displayStandardTime(timeid, hours, minutes, seconds, timeOfDay);
 
     //[miclockid, micount, misize, miminutecount, mistart] = ['miclock', 4, 4, 4, 6];
     // add 1 to minutes to account for the fact that standard minutes
     // are 0 indexed and minutes are 1 indexed
-    var minnormal = minutes + 1;
-    [mi, mihour, miminute] = getMitime(hours, minnormal, micount, misize, miminutecount, mistart);
+    [mi, mihour, miminute] = getMitime(hours, minutes, micount, misize, miminutecount, mistart);
 
     // [mi, mihour, miminute] = [0, 1, 1];
     toggleZeroStyles(mi);
     displayMitime(mitimeid, mi, mihour, miminute);
-    displayMiclock(miclocksvgid, mi, micount, misize, miminutecount, mistart, hours, minnormal);
+    displayMiclock(miclocksvgid, mi, micount, misize, miminutecount, mistart, hours, minutes);
     //document.querySelector('#debug').firstChild.nodeValue = debug;
 }
