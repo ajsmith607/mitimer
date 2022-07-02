@@ -69,11 +69,13 @@ function displayMitime(mitimeid, mi, mihour, miminute) {
     document.querySelector(mitimeid).innerHTML = currentTimeString;
 }
 
+/*
 function getCoordinatesForPercent(percent) {
     var x = Math.cos(2 * Math.PI * percent);
     var y = Math.sin(2 * Math.PI * percent);
     return [x, y];
 }
+*/
 
 function removeElements(container, selector) {
     var elements = container.querySelectorAll(selector);
@@ -94,8 +96,8 @@ function setMeter(containerid, steps, linehalflen, lineClass) {
     // add new lines
     for (var i = 0; i < steps; i++) {
         var percent = steppct * (i + 1);
-        var endX = getCoordinatesForPercent(percent);
-        var endY = getCoordinatesForPercent(percent);
+        var endX = Math.cos(2 * Math.PI * percent);
+        var endY = Math.sin(2 * Math.PI * percent);
         var x1 = endX * (radius - linehalflen);
         var y1 = endY * (radius - linehalflen);
         var x2 = endX * (radius + linehalflen); 
@@ -122,7 +124,8 @@ function drawArc(containerid, percent, pathclass) {
     var largeArcFlag = percent > 0.5 ? 1 : 0;
 
     // largest circle radius is 1, so radius is used to directly scale x, y coordinates below.
-    var [endX, endY] = getCoordinatesForPercent(percent);
+    var endX = Math.cos(2 * Math.PI * percent);
+    var endY = Math.sin(2 * Math.PI * percent);
     var arcdata = [
         `M ${radius} 0`, // Move
         `A ${radius} ${radius} 0 ${largeArcFlag} 1 ${endX*radius} ${endY*radius}`, // Arc
