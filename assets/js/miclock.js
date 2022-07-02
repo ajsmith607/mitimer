@@ -82,7 +82,7 @@ function removeElements(container, selector) {
     }
 }
 
-function setMeter(containerid, steps, steppct, linehalflen, lineClass) {
+function setMeter(containerid, steps, linehalflen, lineClass) {
     var container = document.querySelector(containerid);
 
     removeElements(container, 'line.' + lineClass);
@@ -90,6 +90,7 @@ function setMeter(containerid, steps, steppct, linehalflen, lineClass) {
     var circle = container.getElementsByTagName('circle')[0];
     var radius = circle.r.baseVal.value;
 
+    var steppct = 1/steps;
     // add new lines
     for (var i = 0; i < steps; i++) {
         var percent = steppct * (i + 1);
@@ -180,8 +181,8 @@ function displayMiclock(miclocksvgid, mi, micount, misize, miminutecount, mistar
         drawArc(miclocksvgid + ' .miminuteface', miminutepctelapsed, 'elapsed');
 
         // SET METERS
-        setMeter(miclocksvgid + ' .mihourmeter', micount, 1 / micount, 0.04, 'mitick');
-        setMeter(miclocksvgid + ' .mihourmeter', midayhours, 1 / midayhours, 0.03, 'mihourtick');
+        setMeter(miclocksvgid + ' .mihourmeter', micount, 0.04, 'mitick');
+        setMeter(miclocksvgid + ' .mihourmeter', midayhours, 0.03, 'mihourtick');
     }
     var allcircles = container.getElementsByTagName('circle');
     for (var i = 0; i < allcircles.length; i++) {
