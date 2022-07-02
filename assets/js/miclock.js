@@ -94,7 +94,8 @@ function setMeter(containerid, steps, linehalflen, lineClass) {
     // add new lines
     for (var i = 0; i < steps; i++) {
         var percent = steppct * (i + 1);
-        var [endX, endY] = getCoordinatesForPercent(percent);
+        var endX = getCoordinatesForPercent(percent);
+        var endY = getCoordinatesForPercent(percent);
         var x1 = endX * (radius - linehalflen);
         var y1 = endY * (radius - linehalflen);
         var x2 = endX * (radius + linehalflen); 
