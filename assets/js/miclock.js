@@ -95,8 +95,9 @@ function setMeter(containerid, steps, linehalflen, lineClass) {
     for (var i = 0; i < steps; i++) {
         var percent = steppct * (i + 1);
         var [endX, endY] = getCoordinatesForPercent(percent);
-        var [x1, y1] = [endX * (radius - linehalflen), endY * (radius - linehalflen)];
-        var [x2, y2] = [endX * (radius + linehalflen), endY * (radius + linehalflen)];
+        var x1, y1, x2, y2 = 0;
+        [x1, y1] = [endX * (radius - linehalflen), endY * (radius - linehalflen)];
+        [x2, y2] = [endX * (radius + linehalflen), endY * (radius + linehalflen)];
         var line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
         line.setAttribute('x1', x1);
         line.setAttribute('y1', y1);
