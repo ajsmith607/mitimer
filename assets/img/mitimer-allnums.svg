@@ -3,22 +3,20 @@
 <svg id="midial" viewBox="-1 -1 2 2" style="transform: rotate(-90deg)" class="midial">
 
 <style>/* <![CDATA[ */
-#midial { background: white; padding: 1rem; }
-#midial svg { display: block; width: 60%; height: auto; fill: white; }
-#midial svg line { stroke: #295780; stroke-width: 0.01; stroke-linecap: round; }
-#midial svg line.mitick { stroke-width: 0.024; }
-#midial svg circle { fill: #058aff; }
-#midial svg circle.up { fill: #ffad2b; }
-#midial svg g.mihourmeter circle.up { fill: white; }
-#midial svg circle.down { fill: #058aff; }
-#midial svg path { fill: #058aff; }
-#midial svg path.current { fill: #ff6a1f; } 
-#midial svg text {fill: black; font-family: Arial, Helvetica, sans-serif; }
-#midial svg g.miface text { font-size: .012rem; }
-#midial svg g.mihourface text { font-size: .010rem; }
-#midial svg g.miminuteface text { font-size: .008rem; }
-#midial svg text.hide { display: none; }
-#midial svg:hover text.hide { display: block; }
+line { stroke: #295780; stroke-width: 0.01; stroke-linecap: round; }
+line.mitick { stroke-width: 0.024; }
+circle { fill: #058aff; }
+circle.up { fill: #ffad2b; }
+g.mihourmeter circle.up { fill: white; }
+circle.down { fill: #058aff; }
+path { fill: #058aff; }
+path.current { fill: #ff6a1f; } 
+text {fill: black; font-family: Arial, Helvetica, sans-serif; }
+g.miface text { font-size: .012rem; }
+g.mihourface text { font-size: .010rem; }
+g.miminuteface text { font-size: .008rem; }
+text.hide { display: none; }
+circle:hover text.hide { display: block; }
 /* ]]> */</style>
 
         <g class="miface">
