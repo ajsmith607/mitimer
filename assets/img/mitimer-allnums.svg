@@ -1,5 +1,7 @@
 <article id="miconsole-29d3858b57" style="max-width:300px;">
-    	<style>
+
+        <svg id="midial-29d3858b57" viewBox="-1 -1 2 2" style="transform: rotate(-90deg)" class="midial">
+        <style>
         #miconsole-29d3858b57 { background: white; padding: 1rem; }
         #miconsole-29d3858b57 svg { display: block; width: 100%; height: auto; fill: white; }
         #miconsole-29d3858b57 svg line { stroke: #295780; stroke-width: 0.01; stroke-linecap: round; }
@@ -17,7 +19,6 @@
         #miconsole-29d3858b57 svg text.hide { display: none; }
         #miconsole-29d3858b57 svg:hover text.hide { display: block; }
         </style>
-        <svg id="midial-29d3858b57" viewBox="-1 -1 2 2" style="transform: rotate(-90deg)" class="midial">
         <g class="miface">
         	<circle r="1" class="up"></circle>
         <path d="M 1 0 A 1 1 0 1 0 0.0000628318530302628 0.9999999980260791 L 0 0" class="current"></path><path d="M 1 0 A 1 1 0 0 0 -0.9999999980260791 0.00006283185303032403 L 0 0" class="elapsed"></path><text x="0.4242640687119285" y="0.42426406871192845" text-anchor="middle" dominant-baseline="middle" transform="translate(0.4242640687119285,0.42426406871192845) rotate(90, 0.4242640687119285,0.42426406871192845)">1</text><text x="-0.42426406871192845" y="0.4242640687119285" text-anchor="middle" dominant-baseline="middle" transform="translate(-0.42426406871192845,0.4242640687119285) rotate(90, -0.42426406871192845,0.4242640687119285)">2</text><text x="-0.4242640687119286" y="-0.42426406871192845" text-anchor="middle" dominant-baseline="middle" transform="translate(-0.4242640687119286,-0.42426406871192845) rotate(90, -0.4242640687119286,-0.42426406871192845)">3</text><text x="0.4242640687119284" y="-0.4242640687119286" text-anchor="middle" dominant-baseline="middle" transform="translate(0.4242640687119284,-0.4242640687119286) rotate(90, 0.4242640687119284,-0.4242640687119286)">4</text></g>
