@@ -2,9 +2,9 @@
 
 <svg id="midial" viewBox="-1 -1 2 2" style="transform: rotate(-90deg)" class="midial">
 
-<style>
+<style>/* <![CDATA[ */
 #midial { background: white; padding: 1rem; }
-#midial svg { display: block; width: 100%; height: auto; fill: white; }
+#midial svg { display: block; width: 60%; height: auto; fill: white; }
 #midial svg line { stroke: #295780; stroke-width: 0.01; stroke-linecap: round; }
 #midial svg line.mitick { stroke-width: 0.024; }
 #midial svg circle { fill: #058aff; }
@@ -19,7 +19,7 @@
 #midial svg g.miminuteface text { font-size: .008rem; }
 #midial svg text.hide { display: none; }
 #midial svg:hover text.hide { display: block; }
-</style>
+/* ]]> */</style>
 
         <g class="miface">
         	<circle r="1" class="up"></circle>
