@@ -8,7 +8,7 @@ dark gray: #295780 (or #034580)
 light gray: #f3f4f5
 */
 
-svg#miclock {
+svg#mitime {
   display: block;
   width: 300px;
   height: auto;
@@ -16,38 +16,37 @@ svg#miclock {
   fill: white;
 }
 
-svg#miclock line {
+svg#mitime line {
     stroke: #295780;
     stroke-width: 0.01;
     stroke-linecap: round;
 }
 
-svg#miclock line.mitick {
+svg#mitime line.mitick {
     stroke-width: 0.024;
 }
 
-svg#miclock circle {
+svg#mitime circle {
     fill: #058aff;
 }
 
-svg#miclock circle.up {
+svg#mitime circle.up {
     fill: #ffad2b;
 }
 
-svg#miclock .mihourmeter circle.up {
+svg#mitime .mihourmeter circle.up {
     fill: white;
 }
 
-svg#miclock circle.down {
+svg#mitime circle.down {
     fill: #058aff;
 }
 
- 
-svg#miclock path  {
+svg#mitime path  {
     fill: #058aff;
 }
 
-svg#miclock path.current  {
+svg#mitime path.current  {
     fill: #ff6a1f;
 }
 

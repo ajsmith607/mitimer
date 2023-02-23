@@ -1,0 +1,106 @@
+{{- $random := printf "%.10s" (sha256 now.Unix) -}}
+
+{{/* show labels by default 
+     0 = hide labels by default 
+     1 = show labels by default */}}
+{{- $showlabels      := .Get 0  | default ("0") | int -}}
+
+{{/* specify which label faces should be added,
+     this string can have as many as three characters
+     m = mi face labels 
+     h = mihour face labels
+     n = miminute face labels */}}
+{{- $visiblelabels   := .Get 1  | default ("mhn") -}}
+
+{{/* force static display of time */}}
+{{- $forcestatic     := .Get 2  | default ("0") | int -}}
+
+{{/* width of timer within container */}}
+{{- $width           := .Get 3  | default ("300px") -}}
+
+{{/* force standard hour (in a 24 hour clock) 
+     or use -1, the default, to calculate present hour */}}
+{{- $forcehours      := .Get 4  | default ("-1") | int -}}
+
+{{/* force standard minute (0-60)
+     or use -1, the default, to calculate present minute */}}
+{{- $forceminutes    := .Get 5  | default ("-1") | int -}}
+
+{{/* alignment of timer within container */}}
+{{- $align           := .Get 6  | default ("margin: 3em auto;") | safeCSS -}}
+
+{{/* the document id of the container for the mitimer instance */}}
+{{- $withinelem      := .Get 7  | default  (printf "miconsole-%s" $random) -}}
+
+{{/* document id of the mitimer instance (SVG) itself */}}
+{{- $misvgid         := .Get 8  | default (printf "midial-%s" $random) -}}
+
+{{/* document id of the mitime digital display instance 
+     if an empty string is passed, it will not be output by this shortcode */}}
+{{- $mitimeid        := .Get 9  | default (printf "mitime-%s" $random) -}}
+
+{{/* document id of the standard time digital display instance 
+     if an empty string is passed, it will not be output by this shortcode */}}
+{{- $timeid          := .Get 10 | default (printf "sttime-%s" $random) -}}
+
+{{/* micount is the number of mi in a day */}}
+{{- $micount         := .Get 11 | default ("4") | int -}}
+
+{{/* misize is the number of mihours in a mi */}}
+{{- $misize          := .Get 12 | default ("4") | int -}}
+
+{{/* miminutecount is the number of miminutes in a mihour */}}
+{{- $miminutecount   := .Get 13 | default ("4")  | int -}}
+
+{{/* mistart is the standard hour (in a 24 hour clock) when mitime starts */}}
+{{- $mistart         := .Get 14 | default ("6") | int -}}
+
+{{/* timer update interval */}}
+{{- $updateinterval  := .Get 15 | default ("1000") | int -}}
+
+{{/* direction of timer sweep
+     0 = counterclockwise (timer)
+     1 = clockwise (clock) */}}
+{{- $sweep           := .Get 16 | default ("0") | int -}}
+
+
+<figure id="{{- $withinelem }}-container" class="image gallery-item" 
+        style="max-width: {{- $width -}}; {{- $align -}}">
+
+    <article id="{{- $withinelem }}" 
+             style="max-width: {{- $width -}};">
+    </article>
+
+    {{- if and $mitimeid $timeid -}}
+    <figcaption>
+        {{- with $mitimeid -}}
+            <span id="{{- . -}}-container">
+                <span id="{{- . -}}"></span>
+            </span> 
+            <br />
+        {{- end -}}
+        {{- with $timeid -}}
+            <span id="{{- . -}}-container"> 
+                <span id="{{- . -}}"></span> 
+            </span> 
+            <br />
+        {{- end -}}
+    </figcaption>
+    {{- end -}}
+</figure>
+
+{{- $command := printf `mitimer('%s', '%s', '%s', '%s', %d, %d, %d, %d, %d, %d, '%s', %d, %d)` $withinelem $misvgid $mitimeid $timeid $micount $misize $miminutecount $mistart $sweep $showlabels $visiblelabels $forcehours $forceminutes -}}
+{{- with $forcestatic -}}
+    <script> {{- $command | safeJS -}}; </script>
+{{- else -}}
+    <script defer> setInterval({{- $command  | safeJS -}}, {{- $updateinterval -}}); </script>
+{{- end -}}
+
+
+
+
+
+
+
+
+
