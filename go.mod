@@ -1,3 +1,3 @@
-module github.com/ajs17/mitimer
+module github.com/ajsmith607/mitimer
 
 go 1.17
