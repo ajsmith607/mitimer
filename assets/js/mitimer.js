@@ -1,4 +1,3 @@
-
 // The following were helpful resources used to write this code.
 // https://www.elated.com/creating-a-javascript-clock/
 // https://medium.com/hackernoon/a-simple-pie-chart-in-svg-dbdd653b6936
@@ -139,7 +138,7 @@ function addTextLabels(withinElem, count, maxvalue, sweep, scalefactor, showlabe
        text.setAttribute('x', x);
        text.setAttribute('y', y);
        text.setAttribute('text-anchor', "middle");
-       text.setAttribute('dominant-baseline', "middle");
+       text.setAttribute('dominant-baseline', "central");
        text.setAttribute('transform', 'translate(' + x + ',' + y + ') rotate(90, ' + x + ',' + y + ')');
       
        // translate count to display label
@@ -150,7 +149,7 @@ function addTextLabels(withinElem, count, maxvalue, sweep, scalefactor, showlabe
     	} else {
             textlabel = i % maxvalue + 1;
 		}
-        
+
        text.innerHTML = textlabel;
        container.appendChild(text);		
    }
@@ -312,19 +311,20 @@ function addMitimeTemplate(withinElem, misvgid, mitimeid, timeid) {
         <svg id="${misvgid}" viewBox="-1 -1 2 2" style="transform: rotate(-90deg)" class="midial"></svg>`;
 }
 
+// TODO: the logic of this, mixing the mitimer and standard time functions needs to be fixed!
 function mitimer(withinElem, misvgid, mitimeid, timeid, micount, misize, miminutecount, mistart, sweep, showlabels, visiblelabels_tmp, forcehours, forceminutes) {
     [hours, minutes, seconds, timeOfDay] = getStandardTime(forcehours, forceminutes);
 
     // ugly, but allows for default behavior
     var visiblelabels = "mhn";
-    if (!!visiblelabels_tmp) { visiblelabels = visiblelabels_tmp;  }
+    if (visiblelabels_tmp) { visiblelabels = visiblelabels_tmp;  }
 
     [mi, mihour, miminute] = getMitime(hours, minutes, micount, misize, miminutecount, mistart);
     
-    if (!!misvgid) { addMitimeTemplate(withinElem, misvgid, mitimeid, timeid); }
-    if (!!timeid) { displayStandardTime(timeid, hours, minutes, seconds, timeOfDay); }
-    if (!!mitimeid) { displayMitime(mitimeid, mi, mihour, miminute); }
-    if (!!misvgid) { 
+    if (misvgid) { addMitimeTemplate(withinElem, misvgid, mitimeid, timeid); }
+    if (timeid) { displayStandardTime(timeid, hours, minutes, seconds, timeOfDay); }
+    if (mitimeid) { displayMitime(mitimeid, mi, mihour, miminute); }
+    if (misvgid) { 
       addMitimerDials(misvgid);
       toggleZeroStyles(mi);
       displayMitimer(misvgid, mi, micount, misize, miminutecount, mistart, hours, minutes, sweep, showlabels, visiblelabels); 

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <script>
+        // in development, load the livereload script 
+        if (window.location.hostname === "localhost") {
+            var script = document.createElement('script');
+            script.src = 'http://localhost:35729/livereload.js';
+            document.head.appendChild(script);
+        } 
+
+        const miscript = document.createElement('script');
+        miscript.src = `mitimer.js?t=${Date.now()}`;
+        document.head.appendChild(miscript);
+    </script>
+    <style>
+ 
+      img {
+        width: 100%;
+        height: auto; 
+        border: 0; 
+        -ms-interpolation-mode: bicubic
+      }
+  
+      svg#midial {
+        width: 100%;
+        max-width: 308px;
+        height: auto; 
+      }
+
+      figure#console {
+        background: transparent;
+      }
+
+    </style>
+  </head>
+  
+  <body>
+    <main id="home">
+        <figure id="console" class="grid-item">
+            <svg height: auto; width="100%" id="midial" viewbox="-1 -1 2 2"> </svg> 
+        </figure>
+        <div id="digitalclock" class="grid-item">
+            mitime is <span id="mitime"></span>
+        </div> 
+        <div id="standarddigital"> 
+            (local time is <span id="sttime"></span>)
+        </div> 
+    </main>
+
+    <script defer>
+        setInterval('mitimer("console", "midial", "", "", 4, 4, 4, 6, 0, 0)', 1000 );
+        setInterval('getDisplayMitime("mitime", "sttime", 4, 4, 4, 6)', 1000 );
+    </script>  
+  </body>
+</html>
